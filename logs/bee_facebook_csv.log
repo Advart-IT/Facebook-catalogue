@@ -1,0 +1,12 @@
+
+=== 2025-08-12 17:28:15 start -m Beelittle.bee_facebook_csv ===
+D:\Facebook Cat\items\aalam_fetcher.py:36: DtypeWarning: Columns (18,36,38,41,75,84,88,89) have mixed types. Specify dtype option on import or set low_memory=False.
+  item_df = pd.read_csv(StringIO(response.text))
+Done. Wrote 13144 rows to beelittle_facebook_catalog.csv
+=== exit 0 ===
+
+=== 2025-08-12 17:36:59 start -m Beelittle.bee_facebook_csv ===
+D:\Facebook Cat\items\aalam_fetcher.py:36: DtypeWarning: Columns (18,36,38,41,75,84,88,89) have mixed types. Specify dtype option on import or set low_memory=False.
+  item_df = pd.read_csv(StringIO(response.text))
+Done. Wrote 13144 rows to beelittle_facebook_catalog.csv
+=== exit 0 ===

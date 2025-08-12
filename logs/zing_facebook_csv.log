@@ -1,0 +1,8 @@
+
+=== 2025-08-12 17:28:15 start -m Zing.zing_facebook_csv ===
+C:\Users\BARANEEDHARAN\AppData\Local\Programs\Python\Python312\python.exe: Error while finding module specification for 'Zing.zing_facebook_csv' (ModuleNotFoundError: No module named 'Zing')
+=== exit 1 ===
+
+=== 2025-08-12 17:36:59 start -m zing.zing_facebook_csv ===
+Done. Wrote 3739 rows to zing_facebook_catalog.csv
+=== exit 0 ===
