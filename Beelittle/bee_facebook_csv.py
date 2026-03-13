@@ -98,7 +98,7 @@ def main(business_name):
         condition = "new"
 
         # Price (original)
-        price_str = f"{round(price, 2)} INR" if price else ""
+        price_str = f"{round(price, 2)} INR" if price else "0.00 INR"
 
         # Sale price (only if discount is present)
         if discount is not None:
