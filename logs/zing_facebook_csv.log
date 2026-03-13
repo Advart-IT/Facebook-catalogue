@@ -6,3 +6,52 @@ C:\Users\BARANEEDHARAN\AppData\Local\Programs\Python\Python312\python.exe: Error
 === 2025-08-12 17:36:59 start -m zing.zing_facebook_csv ===
 Done. Wrote 3739 rows to zing_facebook_catalog.csv
 === exit 0 ===
+
+=== 2026-03-13 17:06:42 start -m zing.zing_facebook_csv ===
+Done. Wrote 4991 rows to zing_facebook_catalog.csv
+=== exit 0 ===
+
+=== 2026-03-13 17:09:36 start -m zing.zing_facebook_csv ===
+2026-03-13 17:09:37,128 INFO Attempting to fetch items from https://zing-clothing.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-03-13 17:09:42,442 INFO Saved raw CSV to raw\zing-clothing_aalam_cloud_20260313T113942Z.csv
+2026-03-13 17:09:42,483 INFO Items fetched successfully with 4991 rows and 36 columns.
+Done. Wrote 4991 rows to zing_facebook_catalog.csv
+=== exit 0 ===
+
+=== 2026-03-13 17:12:25 start -m zing.zing_facebook_csv ===
+2026-03-13 17:12:26,293 INFO Attempting to fetch items from https://zing-clothing.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-03-13 17:12:31,994 INFO Saved raw CSV to raw\zing-clothing_aalam_cloud_20260313T114231Z.csv
+2026-03-13 17:12:32,035 INFO Items fetched successfully with 4991 rows and 36 columns.
+Done. Wrote 4991 rows to zing_facebook_catalog.csv
+=== exit 0 ===
+
+=== 2026-03-13 17:14:06 start -m zing.zing_facebook_csv ===
+2026-03-13 17:14:07,044 INFO Attempting to fetch items from https://zing-clothing.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-03-13 17:14:12,300 INFO Saved raw CSV to raw\zing-clothing_aalam_cloud_20260313T114412Z.csv
+2026-03-13 17:14:12,340 INFO Items fetched successfully with 4991 rows and 36 columns.
+Done. Wrote 4991 rows to zing_facebook_catalog.csv
+=== exit 0 ===
+
+=== 2026-03-13 17:19:05 start -m zing.zing_facebook_csv ===
+2026-03-13 17:19:06,373 INFO Attempting to fetch items from https://zing-clothing.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-03-13 17:19:11,929 INFO Items fetched successfully with 4991 rows and 36 columns.
+Done. Wrote 4991 rows to zing_facebook_catalog.csv
+=== exit 0 ===
+
+=== 2026-03-13 17:19:37 start -m zing.zing_facebook_csv ===
+2026-03-13 17:19:37,996 INFO Attempting to fetch items from https://zing-clothing.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-03-13 17:19:43,687 INFO Items fetched successfully with 4991 rows and 36 columns.
+Done. Wrote 4991 rows to zing_facebook_catalog.csv
+=== exit 0 ===
+
+=== 2026-03-13 17:19:56 start -m zing.zing_facebook_csv ===
+2026-03-13 17:19:57,618 INFO Attempting to fetch items from https://zing-clothing.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-03-13 17:20:03,414 INFO Items fetched successfully with 4991 rows and 36 columns.
+Done. Wrote 4991 rows to zing_facebook_catalog.csv
+=== exit 0 ===
+
+=== 2026-03-13 17:20:17 start -m zing.zing_facebook_csv ===
+2026-03-13 17:20:18,549 INFO Attempting to fetch items from https://zing-clothing.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-03-13 17:20:24,246 INFO Items fetched successfully with 4991 rows and 36 columns.
+Done. Wrote 4991 rows to zing_facebook_catalog.csv
+=== exit 0 ===

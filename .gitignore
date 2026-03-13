@@ -1,0 +1,43 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs and runtime files
+logs/
+*.log
+
+# Raw API responses
+raw/
+
+# Generated Facebook catalog CSVs
+*_facebook_catalog.csv
+
+# Python testing cache
+.pytest_cache/
+
+# Local environment / secrets
+.env
+credentials.json
+
+# System files
+.DS_Store
+Thumbs.db

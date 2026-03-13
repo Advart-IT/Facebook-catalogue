@@ -10,3 +10,86 @@ D:\Facebook Cat\items\aalam_fetcher.py:36: DtypeWarning: Columns (18,36,38,41,75
   item_df = pd.read_csv(StringIO(response.text))
 Done. Wrote 13144 rows to beelittle_facebook_catalog.csv
 === exit 0 ===
+
+=== 2026-03-13 17:06:42 start -m Beelittle.bee_facebook_csv ===
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Beelittle\bee_facebook_csv.py", line 129, in <module>
+    main("Beelittle")
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Beelittle\bee_facebook_csv.py", line 41, in main
+    raise KeyError(f"Business '{business_name}' not found in BUSINESS_CONFIG keys: {list(BUSINESS_CONFIG.keys())}")
+KeyError: "Business 'Beelittle' not found in BUSINESS_CONFIG keys: ['zing']"
+=== exit 1 ===
+
+=== 2026-03-13 17:09:36 start -m Beelittle.bee_facebook_csv ===
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Beelittle\bee_facebook_csv.py", line 129, in <module>
+    main("Beelittle")
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Beelittle\bee_facebook_csv.py", line 41, in main
+    raise KeyError(f"Business '{business_name}' not found in BUSINESS_CONFIG keys: {list(BUSINESS_CONFIG.keys())}")
+KeyError: "Business 'Beelittle' not found in BUSINESS_CONFIG keys: ['zing']"
+=== exit 1 ===
+
+=== 2026-03-13 17:12:25 start -m Beelittle.bee_facebook_csv ===
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Beelittle\bee_facebook_csv.py", line 135, in <module>
+    main("Beelittle")
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Beelittle\bee_facebook_csv.py", line 41, in main
+    raise KeyError(f"Business '{business_name}' not found in BUSINESS_CONFIG keys: {list(BUSINESS_CONFIG.keys())}")
+KeyError: "Business 'Beelittle' not found in BUSINESS_CONFIG keys: ['zing']"
+=== exit 1 ===
+
+=== 2026-03-13 17:14:06 start -m Beelittle.bee_facebook_csv ===
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Beelittle\bee_facebook_csv.py", line 137, in <module>
+    main("Beelittle")
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Beelittle\bee_facebook_csv.py", line 41, in main
+    raise KeyError(f"Business '{business_name}' not found in BUSINESS_CONFIG keys: {list(BUSINESS_CONFIG.keys())}")
+KeyError: "Business 'Beelittle' not found in BUSINESS_CONFIG keys: ['zing']"
+=== exit 1 ===
+
+=== 2026-03-13 17:19:05 start -m Beelittle.bee_facebook_csv ===
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Beelittle\bee_facebook_csv.py", line 137, in <module>
+    main("Beelittle")
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Beelittle\bee_facebook_csv.py", line 41, in main
+    raise KeyError(f"Business '{business_name}' not found in BUSINESS_CONFIG keys: {list(BUSINESS_CONFIG.keys())}")
+KeyError: "Business 'Beelittle' not found in BUSINESS_CONFIG keys: ['beelittle', 'zing', 'prathiksham']"
+=== exit 1 ===
+
+=== 2026-03-13 17:19:37 start -m Beelittle.bee_facebook_csv ===
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Beelittle\bee_facebook_csv.py", line 137, in <module>
+    main("belittle")
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Beelittle\bee_facebook_csv.py", line 41, in main
+    raise KeyError(f"Business '{business_name}' not found in BUSINESS_CONFIG keys: {list(BUSINESS_CONFIG.keys())}")
+KeyError: "Business 'belittle' not found in BUSINESS_CONFIG keys: ['beelittle', 'zing', 'prathiksham']"
+=== exit 1 ===
+
+=== 2026-03-13 17:19:56 start -m Beelittle.bee_facebook_csv ===
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Beelittle\bee_facebook_csv.py", line 137, in <module>
+    main("beeittle")
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Beelittle\bee_facebook_csv.py", line 41, in main
+    raise KeyError(f"Business '{business_name}' not found in BUSINESS_CONFIG keys: {list(BUSINESS_CONFIG.keys())}")
+KeyError: "Business 'beeittle' not found in BUSINESS_CONFIG keys: ['beelittle', 'zing', 'prathiksham']"
+=== exit 1 ===
+
+=== 2026-03-13 17:20:17 start -m Beelittle.bee_facebook_csv ===
+2026-03-13 17:20:18,536 INFO Attempting to fetch items from https://beelittle.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-03-13 17:21:39,457 INFO Items fetched successfully with 16084 rows and 57 columns.
+Done. Wrote 16084 rows to beelittle_facebook_catalog.csv
+=== exit 0 ===

@@ -6,3 +6,71 @@ C:\Users\BARANEEDHARAN\AppData\Local\Programs\Python\Python312\python.exe: No mo
 === 2025-08-12 17:36:59 start -m Prathiksham.pkm_facebook_csv ===
 Done. Wrote 1233 rows to prathiksham_facebook_catalog.csv
 === exit 0 ===
+
+=== 2026-03-13 17:06:42 start -m Prathiksham.pkm_facebook_csv ===
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Prathiksham\pkm_facebook_csv.py", line 136, in <module>
+    main("prathiksham")
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Prathiksham\pkm_facebook_csv.py", line 42, in main
+    raise KeyError(f"Business '{business_name}' not found in BUSINESS_CONFIG keys: {list(BUSINESS_CONFIG.keys())}")
+KeyError: "Business 'prathiksham' not found in BUSINESS_CONFIG keys: ['zing']"
+=== exit 1 ===
+
+=== 2026-03-13 17:09:36 start -m Prathiksham.pkm_facebook_csv ===
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Prathiksham\pkm_facebook_csv.py", line 136, in <module>
+    main("prathiksham")
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Prathiksham\pkm_facebook_csv.py", line 42, in main
+    raise KeyError(f"Business '{business_name}' not found in BUSINESS_CONFIG keys: {list(BUSINESS_CONFIG.keys())}")
+KeyError: "Business 'prathiksham' not found in BUSINESS_CONFIG keys: ['zing']"
+=== exit 1 ===
+
+=== 2026-03-13 17:12:25 start -m Prathiksham.pkm_facebook_csv ===
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Prathiksham\pkm_facebook_csv.py", line 136, in <module>
+    main("prathiksham")
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Prathiksham\pkm_facebook_csv.py", line 42, in main
+    raise KeyError(f"Business '{business_name}' not found in BUSINESS_CONFIG keys: {list(BUSINESS_CONFIG.keys())}")
+KeyError: "Business 'prathiksham' not found in BUSINESS_CONFIG keys: ['zing']"
+=== exit 1 ===
+
+=== 2026-03-13 17:14:06 start -m Prathiksham.pkm_facebook_csv ===
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Prathiksham\pkm_facebook_csv.py", line 142, in <module>
+    main("prathiksham")
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Prathiksham\pkm_facebook_csv.py", line 42, in main
+    raise KeyError(f"Business '{business_name}' not found in BUSINESS_CONFIG keys: {list(BUSINESS_CONFIG.keys())}")
+KeyError: "Business 'prathiksham' not found in BUSINESS_CONFIG keys: ['zing']"
+=== exit 1 ===
+
+=== 2026-03-13 17:19:05 start -m Prathiksham.pkm_facebook_csv ===
+2026-03-13 17:19:06,421 INFO Attempting to fetch items from https://thaiyal.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-03-13 17:19:09,313 INFO Items fetched successfully with 1769 rows and 37 columns.
+Done. Wrote 1769 rows to prathiksham_facebook_catalog.csv
+=== exit 0 ===
+
+=== 2026-03-13 17:19:37 start -m Prathiksham.pkm_facebook_csv ===
+2026-03-13 17:19:38,056 INFO Attempting to fetch items from https://thaiyal.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-03-13 17:19:40,895 INFO Items fetched successfully with 1769 rows and 37 columns.
+Done. Wrote 1769 rows to prathiksham_facebook_catalog.csv
+=== exit 0 ===
+
+=== 2026-03-13 17:19:56 start -m Prathiksham.pkm_facebook_csv ===
+2026-03-13 17:19:57,590 INFO Attempting to fetch items from https://thaiyal.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-03-13 17:20:00,617 INFO Items fetched successfully with 1769 rows and 37 columns.
+Done. Wrote 1769 rows to prathiksham_facebook_catalog.csv
+=== exit 0 ===
+
+=== 2026-03-13 17:20:17 start -m Prathiksham.pkm_facebook_csv ===
+2026-03-13 17:20:18,565 INFO Attempting to fetch items from https://thaiyal.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-03-13 17:20:21,434 INFO Items fetched successfully with 1769 rows and 37 columns.
+Done. Wrote 1769 rows to prathiksham_facebook_catalog.csv
+=== exit 0 ===

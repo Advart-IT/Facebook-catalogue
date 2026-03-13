@@ -51,13 +51,21 @@ def main(business_name):
     df = fetch_items(host, token)
     # print(df.columns)  # uncomment if you want to inspect headers
 
+    def _normalize(s):
+        return "".join(ch.lower() for ch in str(s) if ch.isalnum())
+
+    col_map = { _normalize(c): c for c in df.columns }
+
     def col(df, name, idx=None):
-        if name in df.columns:
-            return df[name]
-        elif idx is not None and idx < df.shape[1]:
+        n = _normalize(name)
+        if n in col_map:
+            return df[col_map[n]]
+        for k, orig in col_map.items():
+            if n in k or k in n:
+                return df[orig]
+        if idx is not None and idx < df.shape[1]:
             return df.iloc[:, idx]
-        else:
-            return pd.Series([None]*len(df))
+        return pd.Series([None]*len(df))
 
     # Base fields (keep same mapping you had)
     c_id       = col(df, "ID", 0)

@@ -6,3 +6,99 @@ Done. Wrote 4086 rows to adoreaboo_facebook_catalog.csv
 === 2025-08-12 17:36:59 start -m Adoreboo.adb_facebook_csv ===
 Done. Wrote 4086 rows to adoreaboo_facebook_catalog.csv
 === exit 0 ===
+
+=== 2026-03-13 17:06:42 start -m Adoreboo.adb_facebook_csv ===
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Adoreboo\adb_facebook_csv.py", line 128, in <module>
+    main("adoreaboo")  # change if needed
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Adoreboo\adb_facebook_csv.py", line 41, in main
+    raise KeyError(f"Business '{business_name}' not found in BUSINESS_CONFIG keys: {list(BUSINESS_CONFIG.keys())}")
+KeyError: "Business 'adoreaboo' not found in BUSINESS_CONFIG keys: ['zing']"
+=== exit 1 ===
+
+=== 2026-03-13 17:09:36 start -m Adoreboo.adb_facebook_csv ===
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Adoreboo\adb_facebook_csv.py", line 128, in <module>
+    main("adoreaboo")  # change if needed
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Adoreboo\adb_facebook_csv.py", line 41, in main
+    raise KeyError(f"Business '{business_name}' not found in BUSINESS_CONFIG keys: {list(BUSINESS_CONFIG.keys())}")
+KeyError: "Business 'adoreaboo' not found in BUSINESS_CONFIG keys: ['zing']"
+=== exit 1 ===
+
+=== 2026-03-13 17:12:25 start -m Adoreboo.adb_facebook_csv ===
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Adoreboo\adb_facebook_csv.py", line 128, in <module>
+    main("adoreaboo")  # change if needed
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Adoreboo\adb_facebook_csv.py", line 41, in main
+    raise KeyError(f"Business '{business_name}' not found in BUSINESS_CONFIG keys: {list(BUSINESS_CONFIG.keys())}")
+KeyError: "Business 'adoreaboo' not found in BUSINESS_CONFIG keys: ['zing']"
+=== exit 1 ===
+
+=== 2026-03-13 17:14:06 start -m Adoreboo.adb_facebook_csv ===
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Adoreboo\adb_facebook_csv.py", line 134, in <module>
+    main("adoreaboo")  # change if needed
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Adoreboo\adb_facebook_csv.py", line 41, in main
+    raise KeyError(f"Business '{business_name}' not found in BUSINESS_CONFIG keys: {list(BUSINESS_CONFIG.keys())}")
+KeyError: "Business 'adoreaboo' not found in BUSINESS_CONFIG keys: ['zing']"
+=== exit 1 ===
+
+=== 2026-03-13 17:19:05 start -m Adoreboo.adb_facebook_csv ===
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Adoreboo\adb_facebook_csv.py", line 136, in <module>
+    main("adoreaboo")  # change if needed
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Adoreboo\adb_facebook_csv.py", line 41, in main
+    raise KeyError(f"Business '{business_name}' not found in BUSINESS_CONFIG keys: {list(BUSINESS_CONFIG.keys())}")
+KeyError: "Business 'adoreaboo' not found in BUSINESS_CONFIG keys: ['beelittle', 'zing', 'prathiksham']"
+=== exit 1 ===
+
+=== 2026-03-13 17:19:37 start -m Adoreboo.adb_facebook_csv ===
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Adoreboo\adb_facebook_csv.py", line 136, in <module>
+    main("adoreaboo")  # change if needed
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Adoreboo\adb_facebook_csv.py", line 41, in main
+    raise KeyError(f"Business '{business_name}' not found in BUSINESS_CONFIG keys: {list(BUSINESS_CONFIG.keys())}")
+KeyError: "Business 'adoreaboo' not found in BUSINESS_CONFIG keys: ['beelittle', 'zing', 'prathiksham']"
+=== exit 1 ===
+
+=== 2026-03-13 17:19:56 start -m Adoreboo.adb_facebook_csv ===
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Adoreboo\adb_facebook_csv.py", line 136, in <module>
+    main("adoreaboo")  # change if needed
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Adoreboo\adb_facebook_csv.py", line 41, in main
+    raise KeyError(f"Business '{business_name}' not found in BUSINESS_CONFIG keys: {list(BUSINESS_CONFIG.keys())}")
+KeyError: "Business 'adoreaboo' not found in BUSINESS_CONFIG keys: ['beelittle', 'zing', 'prathiksham']"
+=== exit 1 ===
+
+=== 2026-03-13 17:20:17 start -m Adoreboo.adb_facebook_csv ===
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Adoreboo\adb_facebook_csv.py", line 136, in <module>
+    main("adoreaboo")  # change if needed
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\FAcebook\Facebook-catalogue\Adoreboo\adb_facebook_csv.py", line 41, in main
+    raise KeyError(f"Business '{business_name}' not found in BUSINESS_CONFIG keys: {list(BUSINESS_CONFIG.keys())}")
+KeyError: "Business 'adoreaboo' not found in BUSINESS_CONFIG keys: ['beelittle', 'zing', 'prathiksham']"
+=== exit 1 ===

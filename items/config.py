@@ -3,24 +3,24 @@ BUSINESS_CONFIG = {
         "db_name": "beelittle",
         "domain":"www.beelittle.in",
         "url": "beelittle.aalam.cloud",
-        "auth_token": "3f9c3cdb444843bb8cd5c5808f6090c8#1743332414.1303225#;RQ/YJL6c4LFRHPwa6tIvifw9wKuhD4es5oxiwfbRW7r4PHdgeTruVlrUMmdevPKsbQYEaHhTXVmwftK+YzIjn9+eHqMIf4toZZUI5b93IjrFEXDbYZj/FTfWd8BM4h5p2Cc8TOb/uF4On2W1zqwPBSKM02p++b5sZT24dc+n298="
+        "auth_token": "49b9dec0e26d4f588fcb2cd5750abe23#1765174764.6597733#;zTumnWpd1NOwDfNVRvOAlVeY928e+3QWar77+adbGKR72yLxcLwjd89Eto7cMo4X6uEeFacMen9YiqHndVMyvkpx+hJ2QmRy8GFP+r5EC41tlhx8vpWVl5J9qhRIBzqK8fM6Mh27LB4mcfmQwHjx5W1yFyznVju3P82LY2g7ej4="
     },
     "zing": {
         "db_name": "zing",
         "domain":"www.zingclothing.in",
         "url": "zing-clothing.aalam.cloud",
-        "auth_token": "4709e61e5a4d4f4db455dd8ddbac3b7b#1743341465.0037143#;qcpIh7YidezZJDhGUiWA5ug+NO8xdInmXGzSVMEZ8ao59lrWvb02zoSF2JZA8gjfEsv+G9ZPavm4ondViDztv5bCZodUg8b973up2PaA8WOMd1fMgCWneTzg+is/r2MfAI27VpnPPhzyolfLdi73DvNDBRoVFO955GpzDiLY1HA="
+        "auth_token": "ab94d7e744fe4005802e3582df72233b#1765174591.7644598#;DyFEGclVk1eWiAWTKfriAdf4yCPTkQfH6Tby/wzXDlXQLrrCy7RwUbm9St/6g7RSHh270xBBmd5qRhg1PvJOrfkwXdVfYvIXknkpxHqE2BHm0DALnb0qVkTIPsnCb5jrJ0I6JmbwlkW5fVVTHByUYSi/VNmQeHfFAnamxgTfxsA="
     },
     "prathiksham": {
         "db_name": "prathiksham",
         "domain":"www.prathiksham.in",
         "url": "thaiyal.aalam.cloud",
-        "auth_token": "633f053d6bf342d09598b15cdf9530de#1743332352.7063792#;zVaikrqCFBaUeb7LJ/qlJzgkiqRVFlPDoLiFcawZUo2r6OHvQb1QQV7hxnEJbAlAeSbFMLjdq1/Gr/E82VZrAFBlF9j99AnovfIICLwP2OtDRe6TQZX5LkDCEM2E03WDhxPi71lRDAuTjxwissDHZmFAZ1pOjrSRpe0mWIC1Z/M="
+        "auth_token": "6183aac438e14e17b7188e833c07a7f8#1765174691.3604994#;N8e6dl6M0dvElFjcmAehEJBK1yoHXuj9Cwzh1aCs2pSDhG218h1pzZGK+GKEnM/rVwcJAT0wn17bIHWvDlR3RJUcOGRLRNHBIUMqVZYNjytjkT0+6gMtw/p4tP95lfXswgbk9d75u5QCR71fslJ2KnIHyyXjFxaIkbMaLQuND04="
     },
-    "adoreaboo": {
-        "db_name": "adoreaboo",
-        "domain":"www.adoreaboo.com",
-        "url": "adoreaboo.aalam.cloud",
-        "auth_token": "71db2a2eb1824423b21d888a9a39dad4#1742955514.9131804#;WpNHxU3RWgWHxEOtgh7b4BKKaOEwJ0Lurj2WMhprNHFpVuLkmsPx3AGnzcd7SjPoWLa+JrQrt67pmvieen4V6Rk1uzJI+djSvfrLJGNhipHeL7TKHe3wV4lWLkmcxh4QJG/WGKnPg8MCgPV4ZSeZmm5m2cpYyfaYtRo+ywtH5qQ="
-    },
+    # "adoreaboo": {
+    #     "db_name": "adoreaboo",
+    #     "domain":"www.adoreaboo.com",
+    #     "url": "adoreaboo.aalam.cloud",
+    #     "auth_token": "71db2a2eb1824423b21d888a9a39dad4#1742955514.9131804#;WpNHxU3RWgWHxEOtgh7b4BKKaOEwJ0Lurj2WMhprNHFpVuLkmsPx3AGnzcd7SjPoWLa+JrQrt67pmvieen4V6Rk1uzJI+djSvfrLJGNhipHeL7TKHe3wV4lWLkmcxh4QJG/WGKnPg8MCgPV4ZSeZmm5m2cpYyfaYtRo+ywtH5qQ="
+    # },
 }
