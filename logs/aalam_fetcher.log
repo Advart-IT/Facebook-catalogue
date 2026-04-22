@@ -16,3 +16,14 @@
 2026-03-13 17:20:21,434 INFO Items fetched successfully with 1769 rows and 37 columns.
 2026-03-13 17:20:24,246 INFO Items fetched successfully with 4991 rows and 36 columns.
 2026-03-13 17:21:39,457 INFO Items fetched successfully with 16084 rows and 57 columns.
+2026-04-22 10:37:37,749 INFO Attempting to fetch items from https://zing-clothing.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-04-22 10:37:37,750 INFO Attempting to fetch items from https://beelittle.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-04-22 10:37:37,750 INFO Attempting to fetch items from https://beelittle.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-04-22 10:37:37,754 INFO Attempting to fetch items from https://thaiyal.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-04-22 10:37:37,756 INFO Attempting to fetch items from https://zing-clothing.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-04-22 10:37:37,758 INFO Attempting to fetch items from https://thaiyal.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-04-22 10:37:42,855 INFO Items fetched successfully with 1877 rows and 37 columns.
+2026-04-22 10:37:42,855 INFO Items fetched successfully with 1877 rows and 37 columns.
+2026-04-22 10:37:50,100 INFO Items fetched successfully with 5287 rows and 37 columns.
+2026-04-22 10:39:23,392 INFO Items fetched successfully with 16918 rows and 58 columns.
+2026-04-22 10:39:25,175 INFO Items fetched successfully with 16918 rows and 58 columns.

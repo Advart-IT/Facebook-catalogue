@@ -74,3 +74,9 @@ Done. Wrote 1769 rows to prathiksham_facebook_catalog.csv
 2026-03-13 17:20:21,434 INFO Items fetched successfully with 1769 rows and 37 columns.
 Done. Wrote 1769 rows to prathiksham_facebook_catalog.csv
 === exit 0 ===
+
+=== 2026-04-22 10:37:30 start -m Prathiksham.pkm_facebook_csv ===
+2026-04-22 10:37:37,754 INFO Attempting to fetch items from https://thaiyal.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-04-22 10:37:42,855 INFO Items fetched successfully with 1877 rows and 37 columns.
+Done. Wrote 1877 rows to prathiksham_facebook_catalog.csv
+=== exit 0 ===

@@ -6,10 +6,12 @@ LOG_DIR = os.path.join(ROOT, "logs")
 
 # Use correct package names (match folder case; important on Linux!)
 MODULES = [
-    ("adb_facebook_csv",         "Adoreboo.adb_facebook_csv"),
     ("bee_facebook_csv",         "Beelittle.bee_facebook_csv"),
+    ("bee_google_csv",           "Beelittle.bee_google_csv"),
     ("zing_facebook_csv",        "zing.zing_facebook_csv"),
+    ("zing_google_csv",          "zing.zig_google_csv"),
     ("prathiksham_facebook_csv", "Prathiksham.pkm_facebook_csv"),
+    ("prathiksham_google_csv",   "Prathiksham.pkm_google_csv"),
 ]
 
 def run_once() -> int:

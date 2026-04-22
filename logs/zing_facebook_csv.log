@@ -55,3 +55,9 @@ Done. Wrote 4991 rows to zing_facebook_catalog.csv
 2026-03-13 17:20:24,246 INFO Items fetched successfully with 4991 rows and 36 columns.
 Done. Wrote 4991 rows to zing_facebook_catalog.csv
 === exit 0 ===
+
+=== 2026-04-22 10:37:30 start -m zing.zing_facebook_csv ===
+2026-04-22 10:37:37,756 INFO Attempting to fetch items from https://zing-clothing.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-04-22 10:37:50,100 INFO Items fetched successfully with 5287 rows and 37 columns.
+Done. Wrote 5287 rows to zing_facebook_catalog.csv
+=== exit 0 ===

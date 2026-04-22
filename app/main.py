@@ -17,7 +17,9 @@ app = FastAPI(title="Facebook CSV Feeds (Per Brand)")
 # only simple safe names like "brand_a" or "nike-2025"
 SAFE_NAME = re.compile(r"^[a-z0-9][a-z0-9_\-]*$")
 PATTERN_SUFFIX = "_facebook_catalog.csv"
+PATTERN_SUFFIX_GOOGLE = "_google_catalog.csv"
 PATTERN_GLOB = f"*{PATTERN_SUFFIX}"
+PATTERN_GLOB_GOOGLE = f"*{PATTERN_SUFFIX_GOOGLE}"
 
 # --- Basic Auth ---
 security = HTTPBasic()
@@ -46,6 +48,23 @@ def csv_path_for_brand(brand: str) -> Path:
 
     if not path.exists() or not path.is_file():
         raise HTTPException(status_code=404, detail="CSV not found")
+    return path
+
+def csv_path_for_brand_google(brand: str) -> Path:
+    brand = brand.strip().lower()
+    if not SAFE_NAME.match(brand):
+        raise HTTPException(status_code=400, detail="invalid brand name")
+
+    # optionally enforce allow-list
+    if ALLOWED_BRANDS and brand not in ALLOWED_BRANDS:
+        raise HTTPException(status_code=404, detail="brand not allowed")
+
+    # match the Google CSV filename pattern
+    filename = f"{brand}{PATTERN_SUFFIX_GOOGLE}"
+    path = ROOT_DIR / filename
+
+    if not path.exists() or not path.is_file():
+        raise HTTPException(status_code=404, detail="Google CSV not found")
     return path
 
 def file_meta(path: Path):
@@ -84,6 +103,38 @@ def list_feeds(_: str = Depends(require_basic)) -> Dict[str, Any]:
 @app.get("/feed/{brand}.csv")
 def serve_brand_csv(brand: str, request: Request, _: str = Depends(require_basic)):
     path = csv_path_for_brand(brand)
+    last_modified, etag, size = file_meta(path)
+
+    # conditional GET
+    inm = request.headers.get("if-none-match")
+    if inm and inm.strip('"') == etag:
+        return Response(status_code=304)
+
+    ims = request.headers.get("if-modified-since")
+    if ims:
+        try:
+            ims_dt = parsedate_to_datetime(ims)
+            if ims_dt.tzinfo is None:
+                ims_dt = ims_dt.replace(tzinfo=timezone.utc)
+            if last_modified <= ims_dt:
+                return Response(status_code=304)
+        except Exception:
+            pass
+
+    headers = {
+        "Content-Type": "text/csv; charset=utf-8",
+        "Cache-Control": f"public, max-age={CACHE_SECONDS}, must-revalidate",
+        "ETag": f"\"{etag}\"",
+        "Last-Modified": formatdate(timeval=last_modified.timestamp(), usegmt=True),
+        "Content-Length": str(size),
+        "Content-Disposition": f'inline; filename="{path.name}"',
+    }
+    return FileResponse(path=path, media_type="text/csv; charset=utf-8", headers=headers, filename=path.name)
+
+@app.get("/feed_google/{brand}.csv")
+def serve_brand_google_csv(brand: str, request: Request):
+    """Serve Google merchant CSV without authentication"""
+    path = csv_path_for_brand_google(brand)
     last_modified, etag, size = file_meta(path)
 
     # conditional GET

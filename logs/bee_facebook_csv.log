@@ -93,3 +93,11 @@ KeyError: "Business 'beeittle' not found in BUSINESS_CONFIG keys: ['beelittle', 
 2026-03-13 17:21:39,457 INFO Items fetched successfully with 16084 rows and 57 columns.
 Done. Wrote 16084 rows to beelittle_facebook_catalog.csv
 === exit 0 ===
+
+=== 2026-04-22 10:37:30 start -m Beelittle.bee_facebook_csv ===
+2026-04-22 10:37:37,750 INFO Attempting to fetch items from https://beelittle.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+C:\Users\BARANEEDHARAN\OneDrive\Desktop\Advart\Facebook-catalogue\items\aalam_fetcher.py:41: DtypeWarning: Columns (0: PROPERTY:Amount, 1: PROPERTY:Discount, 2: PROPERTY:LAUNCH DATE, 3: PROPERTY:Occasion, 4: PROPERTY:Sale, 5: PROPERTY:Size, 6: PROPERTY:Weight, 7: PROPERTY:__Bottom Fabric, 8: PROPERTY:__Discount, 9: PROPERTY:__Inventory Type, 10: PROPERTY:__Offer Date, 11: PROPERTY:__Relist Date, 12: PROPERTY:__Sale, 13: PROPERTY:__Top Fabric) have mixed types. Specify dtype option on import or set low_memory=False.
+  item_df = pd.read_csv(StringIO(response.text))
+2026-04-22 10:39:25,175 INFO Items fetched successfully with 16918 rows and 58 columns.
+Done. Wrote 16918 rows to beelittle_facebook_catalog.csv
+=== exit 0 ===
