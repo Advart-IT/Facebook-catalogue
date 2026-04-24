@@ -100,7 +100,7 @@ def main(business_name):
         availability = "in stock" if stock > 0 else "out of stock"
         condition = "new"
 
-        price_str = f"{round(price, 2)} INR" if price else "0.00 INR"
+        price_str = f"{price:.2f} INR" if price else "0.00 INR"
 
         link = f"{domain}/store/item/{urllib.parse.quote_plus(str(name))}?id={_id}"
         image_link = f"{domain}/aalam/stock/item/{_id}/image/_/face-img"
