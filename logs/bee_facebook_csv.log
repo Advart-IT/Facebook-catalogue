@@ -101,3 +101,11 @@ C:\Users\BARANEEDHARAN\OneDrive\Desktop\Advart\Facebook-catalogue\items\aalam_fe
 2026-04-22 10:39:25,175 INFO Items fetched successfully with 16918 rows and 58 columns.
 Done. Wrote 16918 rows to beelittle_facebook_catalog.csv
 === exit 0 ===
+
+=== 2026-04-24 16:56:55 start -m Beelittle.bee_facebook_csv ===
+2026-04-24 16:57:03,612 INFO Attempting to fetch items from https://beelittle.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+C:\Users\BARANEEDHARAN\OneDrive\Desktop\Advart\Facebook-catalogue\items\aalam_fetcher.py:41: DtypeWarning: Columns (0: PROPERTY:Amount, 1: PROPERTY:Discount, 2: PROPERTY:LAUNCH DATE, 3: PROPERTY:Occasion, 4: PROPERTY:Sale, 5: PROPERTY:Weight, 6: PROPERTY:__Bottom Fabric, 7: PROPERTY:__Discount, 8: PROPERTY:__Inventory Type, 9: PROPERTY:__Offer Date, 10: PROPERTY:__Relist Date, 11: PROPERTY:__Sale, 12: PROPERTY:__Top Fabric) have mixed types. Specify dtype option on import or set low_memory=False.
+  item_df = pd.read_csv(StringIO(response.text))
+2026-04-24 16:58:41,094 INFO Items fetched successfully with 16958 rows and 58 columns.
+Done. Wrote 16958 rows to beelittle_facebook_catalog.csv
+=== exit 0 ===

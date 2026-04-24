@@ -27,3 +27,14 @@
 2026-04-22 10:37:50,100 INFO Items fetched successfully with 5287 rows and 37 columns.
 2026-04-22 10:39:23,392 INFO Items fetched successfully with 16918 rows and 58 columns.
 2026-04-22 10:39:25,175 INFO Items fetched successfully with 16918 rows and 58 columns.
+2026-04-24 16:57:03,609 INFO Attempting to fetch items from https://thaiyal.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+ 30.
+2026-04-24 16:57:03,611 INFO Attempting to fetch items from https://zing-clothing.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-04-24 16:57:03,612 INFO Attempting to fetch items from https://beelittle.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-04-24 16:57:03,614 INFO Attempting to fetch items from https://thaiyal.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-04-24 16:57:09,943 INFO Items fetched successfully with 1907 rows and 37 columns.
+2026-04-24 16:57:09,964 INFO Items fetched successfully with 1907 rows and 37 columns.
+2026-04-24 16:57:15,619 INFO Items fetched successfully with 5386 rows and 37 columns.
+2026-04-24 16:57:15,627 INFO Items fetched successfully with 5386 rows and 37 columns.
+2026-04-24 16:58:41,094 INFO Items fetched successfully with 16958 rows and 58 columns.
+2026-04-24 16:58:42,453 INFO Items fetched successfully with 16958 rows and 58 columns.
