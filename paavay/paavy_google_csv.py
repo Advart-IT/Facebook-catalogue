@@ -16,7 +16,7 @@ ITEM_TYPE_TO_CATEGORY = {
 FACEBOOK_COLS = [
     'id', 'title', 'description', 'availability', 'condition',
     'link', 'image_link', 'brand', 'color', 'material', 'size',
-    'google_product_category', 'sale price', 'price'
+    'google_product_category',  'price'
 ]
 
 def coalesce(*vals):
@@ -106,7 +106,6 @@ def main(business_name):
         condition = "new"
 
         price_str = f"{round(price, 2)} INR" if price else "0.00 INR"
-        sale_price_str = f"{round(price * (1 - (discount or 0)/100.0), 2)} INR" if discount is not None else ""
 
         link = f"{domain}/store/item/{urllib.parse.quote_plus(str(name))}?id={_id}"
         image_link = f"{domain}/aalam/stock/item/{_id}/image/_/face-img"
@@ -132,8 +131,7 @@ def main(business_name):
             color,                               
             material,                            
             size,                                
-            google_product_category,                    
-            sale_price_str,                      
+            google_product_category,                                      
             price_str                            
         ])
 
