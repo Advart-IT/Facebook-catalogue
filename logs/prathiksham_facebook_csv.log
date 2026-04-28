@@ -86,3 +86,26 @@ Done. Wrote 1877 rows to prathiksham_facebook_catalog.csv
 2026-04-24 16:57:09,964 INFO Items fetched successfully with 1907 rows and 37 columns.
 Done. Wrote 1907 rows to prathiksham_facebook_catalog.csv
 === exit 0 ===
+
+=== 2026-04-28 11:07:35 start -m Prathiksham.pkm_facebook_csv ===
+2026-04-28 11:07:42,241 INFO Attempting to fetch items from https://thaiyal.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-04-28 11:07:45,921 INFO Items fetched successfully with 1931 rows and 37 columns.
+Done. Wrote 1931 rows to prathiksham_facebook_catalog.csv
+
+=== 2026-04-28 11:10:00 start -m Prathiksham.pkm_facebook_csv ===
+2026-04-28 11:10:01,166 INFO Attempting to fetch items from https://thaiyal.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-04-28 11:10:06,306 INFO Items fetched successfully with 1931 rows and 37 columns.
+Done. Wrote 1931 rows to prathiksham_facebook_catalog.csv
+=== exit 0 ===
+
+=== 2026-04-28 11:13:22 start -m Prathiksham.pkm_facebook_csv ===
+2026-04-28 11:13:23,681 INFO Attempting to fetch items from https://thaiyal.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-04-28 11:13:29,565 INFO Items fetched successfully with 1931 rows and 37 columns.
+Done. Wrote 1931 rows to prathiksham_facebook_catalog.csv
+=== exit 0 ===
+
+=== 2026-04-28 11:18:57 start -m Prathiksham.pkm_facebook_csv ===
+2026-04-28 11:18:58,701 INFO Attempting to fetch items from https://thaiyal.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-04-28 11:19:04,537 INFO Items fetched successfully with 1931 rows and 37 columns.
+Done. Wrote 1931 rows to prathiksham_facebook_catalog.csv
+=== exit 0 ===

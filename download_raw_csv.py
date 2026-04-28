@@ -27,8 +27,8 @@ def download_raw_csv(host_name, auth_token, output_file):
 
 if __name__ == "__main__":
     # Example usage
-    host_name = "thaiyal.aalam.cloud"  # Replace with actual host
-    auth_token = "6183aac438e14e17b7188e833c07a7f8#1765174691.3604994#;N8e6dl6M0dvElFjcmAehEJBK1yoHXuj9Cwzh1aCs2pSDhG218h1pzZGK+GKEnM/rVwcJAT0wn17bIHWvDlR3RJUcOGRLRNHBIUMqVZYNjytjkT0+6gMtw/p4tP95lfXswgbk9d75u5QCR71fslJ2KnIHyyXjFxaIkbMaLQuND04="  
-    output_file = "beelittle.csv"
+    host_name = "paavay.aalam.cloud"  # Replace with actual host
+    auth_token = "80139a6e84fe42a18e5a1c481217a976#1775123576.2215948#;Sge5tCrDLPmrs/r9DNHt0wfOKj6CW1rLUDHXhrsuAs84t5XsD0UiZUSmQ3IqxZziCBbJIlNXfmUqy3vPMwd8NO3UaFZT/3m9JLWnYQAvNuFvlX6Jk2ZTH1TBBwrDbz787jPeKNmtzuv5+sgtFAGRe6OHR8o3GWUs/ZxrjuoUqTM="  
+    output_file = "paavay.csv"
     
     download_raw_csv(host_name, auth_token, output_file)

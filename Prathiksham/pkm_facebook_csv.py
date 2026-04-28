@@ -6,7 +6,38 @@ import urllib.parse
 import pandas as pd
 from items.aalam_fetcher import fetch_items
 from items.config import BUSINESS_CONFIG
-
+CUSTOM_TYPE_MAP = {
+    "Exp-Dress": "Apparel & Accessories > Clothing > Dresses",
+    "Exp-Aline-Dress": "Apparel & Accessories > Clothing > Dresses",
+    "New-Exp-Dress": "Apparel & Accessories > Clothing > Dresses",
+    "Exp-Co-ord Set": "Apparel & Accessories > Clothing > Outfit Sets",
+    "Exp-Aline-Co-ord Set": "Apparel & Accessories > Clothing > Outfit Sets",
+    "MTO-Co-ord Set": "Apparel & Accessories > Clothing > Outfit Sets",
+    "MTO-Aline-Co-ord Set": "Apparel & Accessories > Clothing > Outfit Sets",
+    "New-Exp-Co-ord Set": "Apparel & Accessories > Clothing > Outfit Sets",
+    "New-Exp-Aline-Co-ord Set": "Apparel & Accessories > Clothing > Outfit Sets",
+    "New-MTO-Aline-Co-ord Set": "Apparel & Accessories > Clothing > Outfit Sets",
+    "New-MTO-Co-ord Set": "Apparel & Accessories > Clothing > Outfit Sets",
+    "Exp-Kurta": "Apparel & Accessories > Clothing > Traditional & Ceremonial Clothing",
+    "Exp-Aline-Kurta": "Apparel & Accessories > Clothing > Traditional & Ceremonial Clothing",
+    "MTO-Kurta": "Apparel & Accessories > Clothing > Traditional & Ceremonial Clothing",
+    "MTO-Aline-Kurta": "Apparel & Accessories > Clothing > Traditional & Ceremonial Clothing",
+    "New-MTO-Aline-Kurta": "Apparel & Accessories > Clothing > Traditional & Ceremonial Clothing",
+    "New-Exp-Kurta": "Apparel & Accessories > Clothing > Traditional & Ceremonial Clothing",
+    "New-Exp-Aline-Kurta": "Apparel & Accessories > Clothing > Traditional & Ceremonial Clothing",
+    "Exp-Kurta Set": "Apparel & Accessories > Clothing > Traditional & Ceremonial Clothing",
+    "Exp-Aline-Kurta Set": "Apparel & Accessories > Clothing > Traditional & Ceremonial Clothing",
+    "MTO-Aline-Kurta Set": "Apparel & Accessories > Clothing > Traditional & Ceremonial Clothing",
+    "New-Exp-Kurta Set": "Apparel & Accessories > Clothing > Traditional & Ceremonial Clothing",
+    "New-Exp-Aline-Kurta Set": "Apparel & Accessories > Clothing > Traditional & Ceremonial Clothing",
+    "New-MTO-Aline-Kurta Set": "Apparel & Accessories > Clothing > Traditional & Ceremonial Clothing",
+    "Exp-Pant": "Apparel & Accessories > Clothing > Pants",
+    "Dupatta": "Apparel & Accessories > Clothing Accessories > Scarves & Shawls",
+    "Duppata": "Apparel & Accessories > Clothing Accessories > Scarves & Shawls",
+    "New-Top": "Apparel & Accessories > Clothing > Shirts & Tops",
+    "Pyjamas": "Apparel & Accessories > Clothing > Sleepwear & Loungewear > Pajamas",
+    "Shorts Set": "Apparel & Accessories > Clothing > Outfit Sets",
+}
 FACEBOOK_COLS = [
     'id', 'title', 'description', 'availability', 'condition',
     'link', 'image_link', 'brand', 'color', 'material', 'pattern', 'size',
@@ -88,6 +119,7 @@ def main(business_name):
     for i in range(len(df)):
         _id       = coalesce(c_id.iloc[i])
         name      = coalesce(c_name.iloc[i])
+        _type     = str(coalesce(c_type.iloc[i], "")).strip()
         subtitle  = coalesce(c_subtitle.iloc[i])
         sku       = coalesce(c_sku.iloc[i])
 
@@ -99,6 +131,7 @@ def main(business_name):
         description = title
         availability = "in stock" if stock > 0 else "out of stock"
         condition = "new"
+        google_product_category = CUSTOM_TYPE_MAP.get(_type, "Apparel & Accessories > Clothing")
 
         price_str = f"{round(price, 2)} INR" if price else "0.00 INR"
         sale_price_str = f"{round(price * (1 - (discount or 0)/100.0), 2)} INR" if discount is not None else ""
@@ -124,7 +157,7 @@ def main(business_name):
             material,                            # material -> PROPERTY:Fabric
             pattern,                             # pattern -> PROPERTY:Print
             size,                                # size -> PROPERTY:Size
-            "Apparel & Accessories > Clothing",  # google_product_category
+            google_product_category,             # google_product_category
             "Clothing & Accessories > Clothing", # fb_product_category
             "Female",                            # gender
             "adult",                             # age_group

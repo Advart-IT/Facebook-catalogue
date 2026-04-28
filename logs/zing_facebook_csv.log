@@ -67,3 +67,29 @@ Done. Wrote 5287 rows to zing_facebook_catalog.csv
 2026-04-24 16:57:15,619 INFO Items fetched successfully with 5386 rows and 37 columns.
 Done. Wrote 5386 rows to zing_facebook_catalog.csv
 === exit 0 ===
+
+=== 2026-04-28 11:07:34 start -m zing.zing_facebook_csv ===
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\Advart\Facebook-catalogue\zing\zing_facebook_csv.py", line 9, in <module>
+    from zig_google_csv import CUSTOM_TYPE_MAP
+ModuleNotFoundError: No module named 'zig_google_csv'
+
+=== 2026-04-28 11:10:00 start -m zing.zing_facebook_csv ===
+2026-04-28 11:10:01,098 INFO Attempting to fetch items from https://zing-clothing.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-04-28 11:10:12,737 INFO Items fetched successfully with 5394 rows and 37 columns.
+Done. Wrote 5394 rows to zing_facebook_catalog.csv
+=== exit 0 ===
+
+=== 2026-04-28 11:13:22 start -m zing.zing_facebook_csv ===
+2026-04-28 11:13:23,621 INFO Attempting to fetch items from https://zing-clothing.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-04-28 11:13:34,346 INFO Items fetched successfully with 5394 rows and 37 columns.
+Done. Wrote 5394 rows to zing_facebook_catalog.csv
+=== exit 0 ===
+
+=== 2026-04-28 11:18:57 start -m zing.zing_facebook_csv ===
+2026-04-28 11:18:58,633 INFO Attempting to fetch items from https://zing-clothing.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+2026-04-28 11:19:12,097 INFO Items fetched successfully with 5394 rows and 37 columns.
+Done. Wrote 5394 rows to zing_facebook_catalog.csv
+=== exit 0 ===

@@ -109,3 +109,36 @@ C:\Users\BARANEEDHARAN\OneDrive\Desktop\Advart\Facebook-catalogue\items\aalam_fe
 2026-04-24 16:58:41,094 INFO Items fetched successfully with 16958 rows and 58 columns.
 Done. Wrote 16958 rows to beelittle_facebook_catalog.csv
 === exit 0 ===
+
+=== 2026-04-28 11:07:34 start -m Beelittle.bee_facebook_csv ===
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\BARANEEDHARAN\OneDrive\Desktop\Advart\Facebook-catalogue\Beelittle\bee_facebook_csv.py", line 9, in <module>
+    from bee_google_csv import ITEM_TYPE_TO_CATEGORY
+ModuleNotFoundError: No module named 'bee_google_csv'
+=== exit 1 ===
+
+=== 2026-04-28 11:10:00 start -m Beelittle.bee_facebook_csv ===
+2026-04-28 11:10:00,988 INFO Attempting to fetch items from https://beelittle.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+C:\Users\BARANEEDHARAN\OneDrive\Desktop\Advart\Facebook-catalogue\items\aalam_fetcher.py:41: DtypeWarning: Columns (0: PROPERTY:Amount, 1: PROPERTY:Discount, 2: PROPERTY:LAUNCH DATE, 3: PROPERTY:Occasion, 4: PROPERTY:Sale, 5: PROPERTY:Weight, 6: PROPERTY:__Bottom Fabric, 7: PROPERTY:__Discount, 8: PROPERTY:__Offer Date, 9: PROPERTY:__Relist Date, 10: PROPERTY:__Sale, 11: PROPERTY:__Top Fabric) have mixed types. Specify dtype option on import or set low_memory=False.
+  item_df = pd.read_csv(StringIO(response.text))
+2026-04-28 11:11:37,967 INFO Items fetched successfully with 17045 rows and 58 columns.
+Done. Wrote 17045 rows to beelittle_facebook_catalog.csv
+=== exit 0 ===
+
+=== 2026-04-28 11:13:22 start -m Beelittle.bee_facebook_csv ===
+2026-04-28 11:13:23,561 INFO Attempting to fetch items from https://beelittle.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+C:\Users\BARANEEDHARAN\OneDrive\Desktop\Advart\Facebook-catalogue\items\aalam_fetcher.py:41: DtypeWarning: Columns (0: PROPERTY:Amount, 1: PROPERTY:Discount, 2: PROPERTY:LAUNCH DATE, 3: PROPERTY:Occasion, 4: PROPERTY:Sale, 5: PROPERTY:Weight, 6: PROPERTY:__Bottom Fabric, 7: PROPERTY:__Discount, 8: PROPERTY:__Offer Date, 9: PROPERTY:__Relist Date, 10: PROPERTY:__Sale, 11: PROPERTY:__Top Fabric) have mixed types. Specify dtype option on import or set low_memory=False.
+  item_df = pd.read_csv(StringIO(response.text))
+2026-04-28 11:15:04,043 INFO Items fetched successfully with 17045 rows and 58 columns.
+Done. Wrote 17045 rows to beelittle_facebook_catalog.csv
+=== exit 0 ===
+
+=== 2026-04-28 11:18:57 start -m Beelittle.bee_facebook_csv ===
+2026-04-28 11:18:58,514 INFO Attempting to fetch items from https://beelittle.aalam.cloud/aalam/stock/items?download&fields=id,name,type,code,sale_price,sale_discount,sale_discount_pr,sale_discount_mode,stock,is_public,properties. Attempt 1 of 30.
+C:\Users\BARANEEDHARAN\OneDrive\Desktop\Advart\Facebook-catalogue\items\aalam_fetcher.py:41: DtypeWarning: Columns (0: PROPERTY:Amount, 1: PROPERTY:Discount, 2: PROPERTY:LAUNCH DATE, 3: PROPERTY:Occasion, 4: PROPERTY:Sale, 5: PROPERTY:Weight, 6: PROPERTY:__Bottom Fabric, 7: PROPERTY:__Discount, 8: PROPERTY:__Offer Date, 9: PROPERTY:__Relist Date, 10: PROPERTY:__Sale, 11: PROPERTY:__Top Fabric) have mixed types. Specify dtype option on import or set low_memory=False.
+  item_df = pd.read_csv(StringIO(response.text))
+2026-04-28 11:20:38,322 INFO Items fetched successfully with 17045 rows and 58 columns.
+Done. Wrote 17045 rows to beelittle_facebook_catalog.csv
+=== exit 0 ===

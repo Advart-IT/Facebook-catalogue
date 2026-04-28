@@ -6,7 +6,29 @@ import urllib.parse
 import pandas as pd
 from items.aalam_fetcher import fetch_items
 from items.config import BUSINESS_CONFIG
-
+CUSTOM_TYPE_MAP = {
+    "Sale - Dress": "Apparel & Accessories > Clothing > Dresses",
+    "Dress": "Apparel & Accessories > Clothing > Dresses",
+    "Evening Dress": "Apparel & Accessories > Clothing > Dresses",
+    "Kurta": "Apparel & Accessories > Clothing > Traditional & Ceremonial Clothing",
+    "Sale - Kurta": "Apparel & Accessories > Clothing > Traditional & Ceremonial Clothing",
+    "Kurta - Aline": "Apparel & Accessories > Clothing > Traditional & Ceremonial Clothing",
+    "Sale - Kurta - Aline": "Apparel & Accessories > Clothing > Traditional & Ceremonial Clothing",
+    "Kurta - Short": "Apparel & Accessories > Clothing > Traditional & Ceremonial Clothing",
+    "Kurta Set": "Apparel & Accessories > Clothing > Traditional & Ceremonial Clothing",
+    "Sale - Kurta Set": "Apparel & Accessories > Clothing > Traditional & Ceremonial Clothing",
+    "Top": "Apparel & Accessories > Clothing > Shirts & Tops",
+    "Sale - Top": "Apparel & Accessories > Clothing > Shirts & Tops",
+    "Short Top": "Apparel & Accessories > Clothing > Shirts & Tops",
+    "T-Shirt": "Apparel & Accessories > Clothing > Shirts & Tops",
+    "Co-Ord": "Apparel & Accessories > Clothing > Outfit Sets",
+    "Sale - Co-Ords": "Apparel & Accessories > Clothing > Outfit Sets",
+    "Shorts Set": "Apparel & Accessories > Clothing > Outfit Sets",
+    "Pyjama Set": "Apparel & Accessories > Clothing > Sleepwear & Loungewear > Pajamas",
+    "Bottom": "Apparel & Accessories > Clothing > Pants",
+    "Pyjamas": "Apparel & Accessories > Clothing > Sleepwear & Loungewear > Pajamas",
+    "Dupatta": "Apparel & Accessories > Clothing Accessories > Scarves & Shawls",
+}
 FACEBOOK_COLS = [
     'id', 'title', 'description', 'availability', 'condition',
     'link', 'image_link', 'brand', 'color', 'material', 'pattern', 'size',
@@ -89,6 +111,7 @@ def main(business_name):
     for i in range(len(df)):
         _id       = coalesce(c_id.iloc[i])
         name      = coalesce(c_name.iloc[i])
+        _type     = str(coalesce(c_type.iloc[i], "")).strip()
         subtitle  = coalesce(c_subtitle.iloc[i])
         sku       = coalesce(c_sku.iloc[i])
 
@@ -100,7 +123,7 @@ def main(business_name):
         description = title
         availability = "in stock" if stock > 0 else "out of stock"
         condition = "new"
-
+        google_product_category = CUSTOM_TYPE_MAP.get(_type, "Apparel & Accessories > Clothing")
         price_str = f"{price:.2f} INR" if price else "0.00 INR"
 
         link = f"{domain}/store/item/{urllib.parse.quote_plus(str(name))}?id={_id}"
@@ -124,7 +147,7 @@ def main(business_name):
             material,                            # material -> PROPERTY:Fabric
             pattern,                             # pattern -> PROPERTY:Print
             size,                                # size -> PROPERTY:Size
-            "Apparel & Accessories > Clothing",  # google_product_category
+            google_product_category,             # google_product_category
             "Female",                            # gender
             "adult",                             # age_group
             price_str                            # price

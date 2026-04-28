@@ -12,6 +12,8 @@ MODULES = [
     ("zing_google_csv",          "zing.zig_google_csv"),
     ("prathiksham_facebook_csv", "Prathiksham.pkm_facebook_csv"),
     ("prathiksham_google_csv",   "Prathiksham.pkm_google_csv"),
+    ("paavay_facebook_csv", "paavay.paavay_facebook_csv"),
+    ("paavay_google_csv", "paavay.paavy_google_csv"),
 ]
 
 def run_once() -> int:

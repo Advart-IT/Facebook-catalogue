@@ -17,6 +17,12 @@ BUSINESS_CONFIG = {
         "url": "thaiyal.aalam.cloud",
         "auth_token": "6183aac438e14e17b7188e833c07a7f8#1765174691.3604994#;N8e6dl6M0dvElFjcmAehEJBK1yoHXuj9Cwzh1aCs2pSDhG218h1pzZGK+GKEnM/rVwcJAT0wn17bIHWvDlR3RJUcOGRLRNHBIUMqVZYNjytjkT0+6gMtw/p4tP95lfXswgbk9d75u5QCR71fslJ2KnIHyyXjFxaIkbMaLQuND04="
     },
+     "paavay": {
+        "db_name": "paavay",
+        "analytics_id": "362099404",
+        "url": "paavay.aalam.cloud",
+        "auth_token": "80139a6e84fe42a18e5a1c481217a976#1775123576.2215948#;Sge5tCrDLPmrs/r9DNHt0wfOKj6CW1rLUDHXhrsuAs84t5XsD0UiZUSmQ3IqxZziCBbJIlNXfmUqy3vPMwd8NO3UaFZT/3m9JLWnYQAvNuFvlX6Jk2ZTH1TBBwrDbz787jPeKNmtzuv5+sgtFAGRe6OHR8o3GWUs/ZxrjuoUqTM="
+     },
     # "adoreaboo": {
     #     "db_name": "adoreaboo",
     #     "domain":"www.adoreaboo.com",

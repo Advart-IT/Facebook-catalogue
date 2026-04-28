@@ -6,7 +6,7 @@ import urllib.parse
 import pandas as pd
 from items.aalam_fetcher import fetch_items
 from items.config import BUSINESS_CONFIG
-
+from Beelittle.bee_google_csv import ITEM_TYPE_TO_CATEGORY
 FACEBOOK_COLS = [
     'id', 'title', 'description', 'availability', 'condition',
     'link', 'image_link', 'brand', 'google_product_category',
@@ -96,7 +96,10 @@ def main(business_name):
         description = title
         availability = "in stock" if stock > 0 else "out of stock"
         condition = "new"
-
+        google_product_category = ITEM_TYPE_TO_CATEGORY.get(
+            _type,
+            "Apparel & Accessories > Clothing"  # fallback
+        )
         # Price (original)
         price_str = f"{round(price, 2)} INR" if price else "0.00 INR"
 
@@ -119,7 +122,7 @@ def main(business_name):
             link,
             image_link,
             brand,
-            "Apparel & Accessories > Clothing",
+            google_product_category,
             "Clothing & Accessories > Clothing",
             sale_price_str,
             price_str

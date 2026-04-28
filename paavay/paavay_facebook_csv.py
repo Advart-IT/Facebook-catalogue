@@ -6,13 +6,17 @@ import urllib.parse
 import pandas as pd
 from items.aalam_fetcher import fetch_items
 from items.config import BUSINESS_CONFIG
-from Prathiksham.pkm_facebook_csv import CUSTOM_TYPE_MAP
-
+ITEM_TYPE_TO_CATEGORY = {
+    "Ready to Wear Blouses": "Apparel & Accessories > Clothing > Shirts & Tops",
+    "Saree Contours": "Apparel & Accessories > Clothing > Underwear & Socks > Shapewear",
+    "Dresses": "Apparel & Accessories > Clothing > Dresses",
+    "Loungewear": "Apparel & Accessories > Clothing > Sleepwear & Loungewear > Loungewear",
+    "Baby carrier": "Baby & Toddler > Baby Transport > Baby Carriers",
+}
 FACEBOOK_COLS = [
     'id', 'title', 'description', 'availability', 'condition',
-    'link', 'image_link', 'brand', 'color', 'material', 'pattern', 'size',
-    'google_product_category', 'gender', 'age_group',
-    'price'
+    'link', 'image_link', 'brand', 'color', 'material', 'size',
+    'google_product_category', 'fb_product_category', 'sale price', 'price'
 ]
 
 def coalesce(*vals):
@@ -69,20 +73,18 @@ def main(business_name):
             return df.iloc[:, idx]
         return pd.Series([None]*len(df))
 
-    # base fields (same as your earlier script)
+    # base fields
     c_id       = col(df, "ID", 0)
     c_name     = col(df, "Name", 1)
     c_type     = col(df, "Type", 2)
-    c_sku      = col(df, "SKU", 3)              # used as 'id' in output (unchanged)
-    c_price    = col(df, "Price", 4)            # original price
-    c_discount = col(df, "Discount", 5)         # for sale price
+    c_sku      = col(df, "SKU", 3)
+    c_price    = col(df, "Price", 4)
+    c_discount = col(df, "Discount", 5)
     c_stock    = col(df, "Stock", 11)
     c_subtitle = col(df, "Subtitle", 12)
-
-    # new mappings
+    # additional fields
     c_color    = col(df, "PROPERTY:Colour")
     c_material = col(df, "PROPERTY:Fabric")
-    c_pattern  = col(df, "PROPERTY:Print")
     c_size     = col(df, "PROPERTY:Size")
 
     rows_out = []
@@ -101,16 +103,22 @@ def main(business_name):
         description = title
         availability = "in stock" if stock > 0 else "out of stock"
         condition = "new"
-        google_product_category = CUSTOM_TYPE_MAP.get(_type, "Apparel & Accessories > Clothing")
-        price_str = f"{price:.2f} INR" if price else "0.00 INR"
+
+        price_str = f"{round(price, 2)} INR" if price else "0.00 INR"
+        sale_price_str = f"{round(price * (1 - (discount or 0)/100.0), 2)} INR" if discount is not None else ""
 
         link = f"{domain}/store/item/{urllib.parse.quote_plus(str(name))}?id={_id}"
         image_link = f"{domain}/aalam/stock/item/{_id}/image/_/face-img"
 
         color    = coalesce(c_color.iloc[i])
         material = coalesce(c_material.iloc[i])
-        pattern  = coalesce(c_pattern.iloc[i])
         size     = coalesce(c_size.iloc[i])
+    
+        google_product_category = ITEM_TYPE_TO_CATEGORY.get(
+            _type,
+            "Apparel & Accessories > Clothing"  # fallback
+        )
+        fb_category = "Clothing & Accessories > Clothing"     # Default value
 
         rows_out.append([
             sku,                                 
@@ -119,19 +127,18 @@ def main(business_name):
             availability,                        
             condition,                           
             link,                                
-            image_link,                          # image_link
-            brand,                               # brand
-            color,                               # color -> PROPERTY:Colour
-            material,                            # material -> PROPERTY:Fabric
-            pattern,                             # pattern -> PROPERTY:Print
-            size,                                # size -> PROPERTY:Size
-            google_product_category,             # google_product_category
-            "Female",                            # gender
-            "adult",                             # age_group
+            image_link,                          
+            brand,                               
+            color,                               
+            material,                            
+            size,                                
+            google_product_category,                     # google_product_category
+            fb_category,                         # fb_product_category
+            sale_price_str,                      # sale price
             price_str                            # price
         ])
 
-    out_path = f"{business_name}_google_catalog.csv"
+    out_path = f"{business_name}_facebook_catalog.csv"
     with open(out_path, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow(FACEBOOK_COLS)
@@ -140,4 +147,4 @@ def main(business_name):
     print(f"Done. Wrote {len(rows_out)} rows to {out_path}")
 
 if __name__ == "__main__":
-    main("prathiksham")
+    main("paavay")
